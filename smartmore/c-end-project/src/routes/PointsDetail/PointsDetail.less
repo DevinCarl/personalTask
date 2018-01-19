@@ -1,0 +1,219 @@
+.points_detail{
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+
+  .dividers{
+    position: absolute;
+    margin-left: 50%;
+    color: rgba(0,0,0,0);
+    border: 1px solid;
+    width: 0.1rem;
+    background: #f4980f;
+    display: inline-block;
+    z-index: 2;
+    height: 9vh;
+    transform: scale(0.3);
+  }
+
+  .am-tabs-bar .am-tabs-tab{
+    background-color:  #ffb502;
+    color: #ffffff;
+    height: 1.2rem;
+    border-bottom: 0;
+  }
+
+  .am-tabs-ink-bar{
+    background-color: #ffe199;
+    width: 0.6rem !important;
+    margin-left: calc(20%);
+  }
+
+  ._control_fix {
+    margin-top: 0rem !important;
+  }
+
+  ._control{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.5vh;
+    justify-content: center;
+    align-items: center;
+
+    .image_logo{
+      max-width:29.3vw;
+      max-height: 16.5vh;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .image_tip{
+      font-family: PingFangSC-Semibold;
+      font-size: 2.3vh;
+      color: #333333;
+      text-align: center;
+      max-width: 59.2vw;
+      margin-top: 4.5vh;
+    }
+  }
+  .btn_group{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7.5vh;
+    .btn_item_container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .btn_item{
+        border: 1px solid #FFB500;
+        width: 2.5rem;
+        border-radius: 0.1rem;
+        color: #ffb502;
+      }
+      .btn_description{
+        font-family: PingFangSC-Regular;
+        font-size: 0.2rem;
+        color: #333333;
+        letter-spacing: 0;
+        line-height: 0.1rem;
+        height: 0.5rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+      }
+
+    }
+  }
+
+  .points_detail_container {
+    background: url("../../assets/points-detail-background.png");
+    height: 40vh;
+    width: 100%;
+    background-repeat: round;
+
+    .points_circle_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+
+
+      .points_circle_img{
+        background: url("../../assets/points-circle.png");
+        width: 53.3vw;
+        height: 18.1vh;
+        background-repeat: round;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .points_detail_title {
+        font-size: 0.3rem;
+        color: white;
+        margin-top: 0.5rem;
+      }
+
+      .points_detail_number {
+        font-family: PingFangSC-Semibold;
+        font-size: 1rem;
+        color: white;
+
+      }
+
+      .points_detail_buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 4.3vh;
+      }
+
+      .points_rule_button {
+        width: 32vw;
+        background-color: rgba(255,255,255,0.1);
+        color: white;
+        border-color: white;
+      }
+      .points_button_desc {
+        font-size: 1.5vh;
+        color: white;
+        text-align: center;
+        margin-top: 1vh;
+      }
+    }
+
+  }
+
+  .detail_list {
+    width: 100%;
+    border: 0;
+    .am-list-body {
+      border-top: none;
+      &:after {
+        border-bottom: none;
+      }
+    }
+    .am-list-line .am-list-content {
+      font-size: 0.32rem;
+      font-family: PingFangSC-Regular;
+      color: #222222;
+    }
+    .am-list-line .am-list-extra {
+      font-size: 0.32rem;
+      font-family: PingFangSC-Medium;
+      color: #000;
+      font-weight: 600;
+    }
+  }
+
+  .points_detail_list_container {
+    width: 100%
+  }
+
+  .point_detail_date {
+    height: 4.5vh;
+    font-family: PingFangSC-Medium;
+    font-size: 2.1vh;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 0.14rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+  }
+
+  .points_detail_list_item {
+    display: flex;
+    flex-direction: row;
+    height: 9vh;
+    justify-content: space-between;
+  }
+
+  .point_nick_name {
+    font-family: PingFangSC-Regular;
+    margin-left: 8vw;
+    margin-top: 3vw;
+    font-size: 2.4vh;
+    color: #222222;
+  }
+
+  .point_value {
+    font-family: PingFangSC-Regular;
+    margin-right: 8vw;
+    margin-top: 3vw;
+    font-size: 2.4vh;
+    color: #000000;
+    letter-spacing: 1px;
+  }
+}

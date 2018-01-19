@@ -1,0 +1,64 @@
+.m-server {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  .banner{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .title{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: .4rem .3rem .2rem .3rem;
+    .title_icon{
+      height: 0.3rem;
+      width: auto;
+    }
+    .text {
+      font-size: 0.32rem;
+      color: #666;
+      margin-left: 0.2rem;
+      font-family: PingFangSC-Medium;
+    }
+  }
+  .module{
+    background-color: #fff;
+    padding: 0.1rem 0.4rem;
+    overflow: hidden;
+    .moduleText{
+      color: #333;
+      font-size: 0.3rem;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+  }
+  .moduleFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+      display: flex;
+      align-items: center;
+      .moduleIcon{
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-right: 0.2rem;
+      }
+    }
+    .backBtn{
+      display: block;
+      height: 0.4rem;
+      width: auto;
+    }
+  }
+}
+.m-server .moduleRightBtn {
+  background-image: url('../../../assets/BackChevron@2x.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: right;
+  width: 1.2rem;
+  height: 1.2rem;
+}

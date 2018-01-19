@@ -1,0 +1,198 @@
+.favourDetail {
+    height: 100%;
+    background: #fff;
+    color: #333333;
+    .favourDetail-banner {
+        width: 100%;
+        height: 3.4rem;
+        background: #99D1FF;
+        background-image: linear-gradient(90deg, rgba(153,209,255,0.00) 0%);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+    }
+    .favourDetail-banner-logo {
+        width: 1.62rem;
+        height: .52rem;
+        margin-left: .4rem;
+        margin-top: .3rem;
+    }
+    .favourDetail-header {
+        margin-left: 1rem;
+        font-size: .48rem;
+        color: #333333;
+        line-height: .72rem;
+    }
+
+    .favourDetail-list {
+        margin-top: .54rem;
+        margin-bottom: .6rem;
+        .favour-content {
+            padding: 0 .6rem;
+            text-align: center;
+        }
+        .favourDetail-title {
+            font-size: .32rem;
+            line-height: .32rem;
+            color: #333333;
+            font-family: PingFangSC-Medium;
+        }
+        .favourDetail-round {
+            margin: .1rem .2rem .1rem .6rem;
+            vertical-align: top;
+            display: inline-block;
+            width: .2rem;
+            height: .2rem;
+            border-radius: 50%;
+            background: #FFC433;
+        }
+        .favourDetail-timeInfo {
+            margin-top: .2rem;
+            color: #FE6900;
+            width: 5.9rem;
+            font-size: .32rem;
+        }
+        .favourDetail-span {
+            display: inline-block;
+            width: 5.9rem;
+            line-height: .4rem;
+            vertical-align: top;
+            font-size: .28rem;
+            font-family: PingFangSC-Regular;
+        }
+        .favourDetail-content {
+            margin-top: .2rem;
+        }
+    }
+    .favourDetail-favour {
+      width: 100%;
+      padding: 0 .8rem;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin-bottom: .2rem;
+      .item {
+        position: relative;
+        width: 5.9rem;
+        height: 2rem;
+        .info {
+          position: absolute;
+          left: .3rem;
+          top: .2rem;
+          .info-header {
+            font-family: PingFangSC-Regular;
+            font-size: 0.28rem;
+            letter-spacing: .02rem;
+            &.active {
+              color: #FFB500;
+            }
+            &.inactive {
+              color: #999999;
+            }
+          }
+          .info-body {
+            font-family: PingFangSC-Medium;
+            font-size: 0.44rem;
+            letter-spacing: .02rem;
+            padding: .26rem 0 .2rem 0;
+            &.active {
+              color: #FFB500;
+            }
+            &.inactive {
+              color: #999999;
+            }
+          }
+          .info-footer {
+            font-family: PingFangSC-Regular;
+            font-size: .24rem;
+            letter-spacing: -.0172rem;
+            &.active {
+              color: #FFB500;
+            }
+            &.inactive {
+              color: #999999;
+            }
+          }
+        }
+        .info-right {
+          position: absolute;
+          right: .44rem;
+          top: .28rem;
+          font-family: PingFangSC-Semibold;
+          font-size: .32rem;
+          color: #FE6900;
+          writing-mode: tb-rl;
+          &.active {
+            color: #FE6900;
+          }
+          &.inactive {
+            color: #cccccc;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .favourDetail-button {
+        margin: .4rem .3rem;
+        font-family: PingFangSC-Regular;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: .36rem;
+        background: #FE6900;
+        border-radius: .16rem;
+        color: #fff;
+        text-align: center;
+        &.favour-has-get {
+            background: #CCC;
+        }
+    }
+    .favourDetail-pop {
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url(../../../assets/popover.png);
+        background-size: 100% 100%;
+        border-radius: .16rem;
+        width: 5.1rem;
+        height: 4.8rem;
+        text-align: center;
+        img {
+            margin-top: .2rem;
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        .favourDetail-pop-success {
+            margin: .44rem 0 .2rem;
+            font-family: PingFangSC-Medium;
+            font-size: .36rem;
+            color: #FE6900;
+            letter-spacing: 0;
+            line-height: .36rem;
+        }
+        .favourDetail-pop-info {
+            display: inline-block;
+            font-family: PingFangSC-Regular;
+            width: 4.2rem;
+            text-align: center;
+            line-height: .4rem;
+            color: #999;
+            span {
+                color: #2a2a2a;
+            }
+        }
+    }
+
+    .gray {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+    }
+}

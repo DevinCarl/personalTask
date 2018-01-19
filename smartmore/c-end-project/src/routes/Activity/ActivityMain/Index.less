@@ -1,0 +1,87 @@
+.activityMain {
+    width: 100%;
+    height: 100%;
+    font-size: #333;
+    .activityMain-segment {
+        display: flex;
+        height: 1.92rem;
+        width: 100%;
+        background-color: #fff;
+        position:fixed;
+        box-shadow: 0 .02rem .08rem 0 rgba(0,0,0,0.05);
+        .activityMain-segment-left {
+            height: 100%;
+            width: 50%;
+            padding-top: .42rem;
+            position: relative;
+            vertical-align: middle;
+            text-align: center;
+            &.active {
+                p {
+                    color: #FFB500;
+                }
+                .bottom-border {
+                    border-radius: 0.06rem;
+                    background-color: #FFB500;
+                }
+            }
+            img {
+                width: .6rem;
+                height: .56rem;
+                object-fit: cover;
+            }
+            p {
+                font-family: PingFangSC-Semibold;
+                margin-top: .2rem;
+                font-size: .28rem;
+                color: #333;
+            }
+            .bottom-border {
+                position: absolute;
+                bottom: .42rem;
+                height: .06rem;
+                width: .6rem;
+                margin:0 1.56rem;
+            }
+        }
+        .activityMain-segment-vertical {
+            width: .03rem;
+            background-color: #EBEBEB;
+            height: 1.04rem;
+            margin: auto 0;
+        }
+    }
+    .activityMain-items {
+        background-color: #f7f2f2;
+        padding-top: 2.22rem;
+    }
+}
+
+.activityItem {
+    margin: 0rem .3rem .2rem .3rem;
+    border-radius: .2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3rem;
+    width: auto;
+    padding-top: .2rem;
+    &.item1 {
+      background-image: url("../../../assets/activityItem.png");
+    }
+    &.item2 {
+      background-image: url("../../../assets/activityItem1.png");
+    }
+    .activityTag {
+        background-image: url("../../../assets/tag.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        text-align: left;
+        padding: 0 0.1rem;
+        color: #FFF;
+        width: .96rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: .24rem;
+        letter-spacing: 0;
+    }
+}

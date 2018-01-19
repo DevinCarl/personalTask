@@ -1,0 +1,146 @@
+.m_exclusive_service{
+  width: 100%;
+  height: 100%;
+  .title{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0.22rem 0.3rem;
+    &.margin-top-20 {
+      margin-top: .3rem;
+    }
+    .title_icon{
+      height: 0.32rem;
+      width: auto;
+    }
+    .text {
+      font-size: 0.32rem;
+      color: #666;
+      margin-left: 0.1rem;
+    }
+  }
+
+  .banner{
+    background-color: #fff;
+    padding-top: 0.4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    .am-wingblank-lg {
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
+    }
+    .slider-decorator-0 {
+      bottom: -0.7rem !important;
+      .am-carousel-wrap-dot {
+        vertical-align: middle;
+        &.am-carousel-wrap-dot-active {
+          span {
+            opacity: 1;
+            background: #FFC433;;
+            border: .04rem solid #feecbf;
+          }
+        }
+        span {
+          opacity: 0.7;
+          margin: 0 0.05rem;
+          background: #FFDA7F;
+        }
+      }
+    }
+    .banner_left{
+      background-color: #B2DCFF;
+      flex: 1;
+      border-top-right-radius: 0.15rem;
+      border-bottom-right-radius: 0.15rem;
+    }
+    .banner_right{
+      background-color: #FFE5A6;
+      flex: 1;
+      border-top-left-radius: 0.15rem;
+      border-bottom-left-radius: 0.15rem;
+    }
+    .am-wingblank-lg{
+      // margin: 0;
+      width: 76%;
+      box-shadow: 0 0.4rem 0.3rem -0.35rem rgba(204, 204, 204, 0.5);
+    }
+  }
+
+  .item_box{
+    .line{
+      border-bottom: 1px solid #ddd;
+      .am-list-brief {
+        font-size: .28rem;
+      }
+      .am-list-arrow {
+        width: 0.16rem;
+        height: 0.28rem;
+      }
+      img {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+    }
+  }
+
+  .modal{
+    width: 4.5rem;
+    height: 4rem;
+    background-image: url('../../assets/popover.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0.37rem;
+    box-sizing: border-box;
+    .close{
+      width: 1.75rem;
+      height: 1.75rem;
+      margin-top: 0.25rem;
+      display: block;
+      margin-right: 0.05rem;
+    }
+    .modal_title{
+      margin: 0.25rem 0 0.15rem 0;
+      color: #FE6900;
+      font-size: 0.3rem;
+    }
+    .text{
+      color: #999;
+      margin: 0;
+      font-size: 0.2rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.m_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.4);
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.my-carousel {
+}
+.my-carousel a {
+  display: inline-block;
+  width: 100%;
+  margin: 0; padding: 0;
+}
+.my-carousel a img {
+  width: 100%;
+  vertical-align: top;
+}
