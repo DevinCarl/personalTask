@@ -5,7 +5,11 @@ export async function query() {
   	method:'get',
   });
 }
-
+export async function member() {
+  return request('/member/current',{
+  	method:'get',
+  });
+}
 export async function score() {
   return request('/score/detail',{
   	method:'get',

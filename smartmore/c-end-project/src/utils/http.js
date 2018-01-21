@@ -52,7 +52,7 @@ export default function get(url, params) {
 		'Accept': 'application/json',
 		'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
 		// 'AccessToken': window.sessionStorage.getItem('AccessToken')
-		'AccessToken': 'eyJhbGciOiJIUzUxMiJ9.eyJtYWxsSWQiOjg4ODgsInR5cGUiOjEsImV4cCI6MTUxNjExMTYwNywidXNlcklkIjoxMDEwMDV9.jcUhnkl2bqDDpXx_LlhF8exVN077-h2IlTF5LMekAd4iLYx3QSzFFsgWEcVDTuxEGjAw7TKvJevwGoMyZd1c4A'
+		'AccessToken': 'eyJhbGciOiJIUzUxMiJ9.eyJtYWxsSWQiOjg4ODgsInR5cGUiOjEsImV4cCI6MTUxNzU1NTU0MSwidXNlcklkIjoyMDA1MTZ9.sBTZMVYxBEOP26UjCTAjDyZpDSpQOWAq2BSJX1YFWIB0R0_l2QQ9IhqphKwhoUkrpwxtxXTImbZULQNxKiKQ1A'
 	}
 	if(requestMode === 'POST') {
 		urlIE = oriUr;
