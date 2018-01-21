@@ -36,6 +36,8 @@ const data = [
     path: 'opinionList',
   },
 ];
+
+
 class User extends Component {
   componentWillMount() {
     ap.setNavigationBar({
@@ -48,14 +50,13 @@ class User extends Component {
   }
   render() {
     const { dispatch, history, PersonalCenter } = this.props;
-    let userInfo = {
-      avatar: '',
-      userId: 'mallcoo',
-      levleName: '铜卡',
-      currentScore: 435,
-      currentPercent: 43.5,
-      totalScore: 1000
-    };
+    let userInfo = {};
+    if (PersonalCenter.member) {
+      if (PersonalCenter.member.data) {
+        userInfo = PersonalCenter.member.data;
+      }
+    }
+    userInfo.currentPercent = (userInfo.currentScore * 100/userInfo.totalScore).toFixed(2);
     let rate = 1;
     if (PersonalCenter.list && PersonalCenter.list.data) {
       userInfo = PersonalCenter.list.data;
@@ -74,15 +75,14 @@ class User extends Component {
             </div>
             <div className="photo">
               <div className="img">
-                {/* <img src={userInfo.avatar} /> */}
-                <img src={require('../../assets/personalCenter/person-head-girl.png')} />
+                <img src={userInfo.avatar} />
               </div>
             </div>
             <div className="info">
               <div className="info-content">
-                <div className="nickname">{userInfo.name}Shery</div>
-                <div className="gender-male"></div>
-                <span className="level">{userInfo.levelName}黄金卡</span>
+                <div className="nickname">{userInfo.name}</div>
+                <div className={userInfo.gender == "M" ? "gender-male": "gender-female"} ></div>
+                <span className="level">{userInfo.levelName}</span>
               </div>
             </div>
 

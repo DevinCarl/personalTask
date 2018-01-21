@@ -1,11 +1,12 @@
-import { query,score } from '../services/service'
+import { query,score,member } from '../services/service'
 export default {
 
   namespace: 'PersonalCenter',
 
   state: {
   	list:[],
-  	score:[]
+  	score:[],
+  	member: {}
   },
 
   subscriptions: {
@@ -13,7 +14,7 @@ export default {
     	history.listen((location) => {
         const pathname = location.pathname;
         if(pathname == '/personalCenter') {
-          dispatch({ type: 'query'},{payload:{}})
+          dispatch({ type: 'member'},{payload:{}})
         }else if(pathname == '/pointsDetail') {
         	dispatch({ type: 'score'},{payload:{}})
         }
@@ -24,6 +25,19 @@ export default {
   effects: {
     *fetch({ payload }, { call, put }) {  // eslint-disable-line
       yield put({ type: 'save' });
+    },
+    *member({payload}, { call, put }){
+    	console.log(payload)
+      const data = yield call(member, payload)
+      console.log(data.data)
+      if (data) {
+        yield put({
+          type: 'changeMember',
+          payload: {
+            member: data.data
+          },
+        })
+      }
     },
     *query({payload}, { call, put }){
     	console.log(payload)
@@ -60,6 +74,9 @@ export default {
     changeScore(state, action) {
       return { ...state, ...action.payload,...action.list};
     },
+    changeMember(state, action) {
+      return { ...state, ...action.payload};
+    }
   },
 
 };
